@@ -39,7 +39,7 @@ export default function Portfolio() {
       demo: "https://www.linkedin.com/in/sachin-gupta-611322264",
     },
     {
-      title: "lwda lele",
+      title: "Fleet Management & GPS Tracking",
       description:
         "Real-time vehicle tracking system with geofencing, route optimization, and driver behavior analytics for logistics companies.",
       image: "/MSC.png?height=200&width=300",

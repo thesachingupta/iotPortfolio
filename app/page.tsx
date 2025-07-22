@@ -41,24 +41,26 @@ export default function Portfolio() {
     {
       title: "Fleet Management & GPS Tracking",
       description:
-        "Real-time vehicle tracking system with geofencing, route optimization, and driver behavior analytics for logistics companies.",
-      image: "/MSC.png?height=200&width=300",
-      technologies: ["ESP8266", "GPS NEO-6M", "Firebase", "Flutter", "4G LTE", "Google Maps API"],
-      category: "Automotive",
+        "A responsive web platform that helps users easily find and connect with room owners by displaying rental details, locations, and reviews.",
+      image: "/roomhunt.png?height=200&width=300",
+technologies: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "React", "Tailwind CSS"],
+
+      category: "WEB devlpoment",
       icon: <Car className="w-6 h-6" />,
       github: "https://github.com/thesachingupta",
-      demo: "https://fleet-demo.vercel.app",
+      demo: "roomhunt-bay.vercel.app",
     },
     {
-      title: "Precision Agriculture IoT Platform",
+      title: "IoT portfolio",
       description:
-        "Smart farming solution with soil sensors, weather monitoring, and automated irrigation. Increased crop yield by 25% while reducing water usage.",
-      image: "/placeholder.svg?height=200&width=300",
-      technologies: ["Arduino Mega", "Soil Sensors", "Machine Learning", "React", "MongoDB", "Weather API"],
-      category: "AgriTech",
+        "An IoT portfolio showcasing smart, real-time solutions using ESP8266, GPS, Firebase, Flutter, and web technologies for impactful hardware-to-cloud integration.",
+      image: "/iotportfolio.png?height=200&width=300",
+technologies: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Node.js", "Express.js", ],
+
+      category: "WEB development",
       icon: <Cpu className="w-6 h-6" />,
       github: "https://github.com/thesachingupta",
-      demo: "https://agri-platform.vercel.app",
+      demo: "iot-portfolio.vercel.app",
     },
   ]
 

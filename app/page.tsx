@@ -15,31 +15,9 @@ export default function Portfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const { theme, setTheme } = useTheme()
 
-  const projects = [
+  const projects = [ 
     {
-      title: "Pollution To Production",
-      description:
-        "Developed Pollution to Production, an innovative system that captures vehicle exhaust soot and converts it into usable carbon ink while filtering air.",
-      image: "/ptp.svg.jpg?height=200&width=300",
-      technologies: ["ESP32", "Arduino IDE", "Sensor Integration", "Firebase", "Cloud Platforms", "Prototyping & Circuit Design"],
-      category: "Smart IoT Prototype",
-      icon: <Home className="w-6 h-6" />,
-      github: "https://github.com/thesachingupta",
-      demo: "https://www.linkedin.com/in/sachin-gupta-611322264",
-    },
-    {
-      title: "Sleep Apnea device",
-      description:
-        "Developed a Sleep Apnea Monitoring Device that detects irregular breathing patterns during sleep and alerts users in real-time for timely intervention.",
-      image: "/sad.jpg?height=200&width=300",
-      technologies: ["Embedded Systems Design", "Sensor Integration", "Arduino IDE"],
-      category: "Healthcare IoT",
-      icon: <Factory className="w-6 h-6" />,
-      github: "https://github.com/thesachingupta",
-      demo: "https://www.linkedin.com/in/sachin-gupta-611322264",
-    },
-    {
-      title: "Fleet Management & GPS Tracking",
+      title: "ROOM-HUNT Website",
       description:
         "A responsive web platform that helps users easily find and connect with room owners by displaying rental details, locations, and reviews.",
       image: "/roomhunt.png?height=200&width=300",
@@ -51,10 +29,20 @@ technologies: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "React", "T
       demo: "roomhunt-bay.vercel.app",
     },
     {
-      title: "IoT portfolio",
+title: "GoG Cafe Website",
+description: "A modern and responsive website for GoG Cafe featuring an interactive menu, online reservations, and a clean, user-friendly design.",
+      image: "/GoG.png?height=200&width=300",
+   technologies: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Node.js", "Express.js"],
+  category: "Web Development",
+      icon: <Factory className="w-6 h-6" />,
+      github: "https://github.com/thesachingupta",
+      demo: "https://www.linkedin.com/in/sachin-gupta-611322264",
+    },
+    {
+      title: "MY portfolio",
       description:
         "An IoT portfolio showcasing smart, real-time solutions using ESP8266, GPS, Firebase, Flutter, and web technologies for impactful hardware-to-cloud integration.",
-      image: "/iotportfolio.png?height=200&width=300",
+      image: "/webport.png?height=200&width=300",
 technologies: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Node.js", "Express.js", ],
 
       category: "WEB development",
@@ -62,16 +50,47 @@ technologies: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Node.js", 
       github: "https://github.com/thesachingupta",
       demo: "iot-portfolio.vercel.app",
     },
+    {
+      title: "Pollution To Production",
+      description:
+        "Developed Pollution to Production, an innovative system that captures vehicle exhaust soot and converts it into usable carbon ink while filtering air.",
+      image: "/ptp.svg.jpg?height=200&width=300",
+      technologies: ["ESP32", "Arduino IDE", "Sensor Integration", "Firebase", "Cloud Platforms", "Prototyping & Circuit Design"],
+      category: "Smart IoT Prototype",
+      icon: <Home className="w-6 h-6" />,
+      github: "https://github.com/thesachingupta",
+      demo: "https://www.linkedin.com/in/sachin-gupta-611322264",
+    },
+
+        
   ]
 
-  const skills = [
-    { category: "Hardware", items: ["Arduino", "Raspberry Pi", "ESP32/ESP8266", "Sensors (Gas, IR, Pulse Oximeter, Airflow)", "PCB Design & Prototyping"] },
-    { category: "Protocols", items: ["MQTT", "HTTP/HTTPS", "LoRaWAN", "I2C", "Bluetooth","SPI"] },
-    { category: "Cloud Platforms", items: ["AWS IoT", "Google Cloud IoT", "ThingSpeak", "Firebase"] },
-    { category: "Programming", items: ["C/C++", "Embedded-C", "JavaScript", "Node.js", "React"] },
-    { category: "Databases", items: ["MongoDB", "InfluxDB", "PostgreSQL", "Firebase Realtime Database"] },
-    { category: "Tools", items: ["Docker", "Git", "Grafana", "Postman", "VS Code"] },
-  ]
+const skills = [
+  {
+    category: "Frontend",
+    items: ["HTML5", "CSS3", "JavaScript", "React", "Next.js", "Tailwind CSS", "Bootstrap"],
+  },
+  {
+    category: "Backend",
+    items: ["Node.js", "Express.js", "REST APIs", "Authentication", ],
+  },
+  {
+    category: "Databases",
+    items: ["MongoDB", "Postman", "Firebase", "MySQL"],
+  },
+  {
+    category: "Tools & Platforms",
+    items: ["Git", "GitHub", "Vercel","VS Code", "Postman"],
+  },
+  // {
+  //   category: "DevOps & Testing",
+  //   items: ["Docker (Basics)", "CI/CD (GitHub Actions)", "Jest", "ESLint", "Prettier"],
+  // },
+  {
+    category: "Soft Skills",
+    items: ["Team Collaboration", "Problem Solving",  "Client Communication"],
+  },
+]
 
   const certifications = [
     { name: "Medical Device Hackathon (MEDHA) Participant", issuer: " BETIC, IIT Bombay", year: "2024" },
@@ -81,20 +100,21 @@ technologies: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Node.js", 
   ]
 
   const testimonials = [
-    {
-      name: "Rajesh Kumar",
-      // role: "CTO, TechCorp Industries",
-      content:
-        "Sachin delivered an exceptional IoT monitoring system that transformed our manufacturing process. His expertise in embedded systems is outstanding.",
-      rating: 5,
-    },
-    {
-      name: "Priya Sharma",
-      // role: "Product Manager, SmartHome Solutions",
-      content:
-        "Working with Sachin was a game-changer. His smart pollution to production system exceeded our expectations and was delivered on time.",
-      rating: 5,
-    },
+  {
+  name: "Rajesh Kumar",
+  // role: "CTO, TechCorp Industries",
+  content:
+    "Sachin built a high-performing web platform for our business. His attention to responsive design and clean code made a real impact.",
+  rating: 5,
+},
+{
+  name: "Priya Sharma",
+  // role: "Product Manager, SmartWeb Solutions",
+  content:
+    "Sachin’s web development skills helped us launch a seamless and fast-loading website. He delivered exactly what we needed, on time.",
+  rating: 5,
+}
+
   ]
 
   return (
@@ -228,11 +248,11 @@ technologies: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Node.js", 
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 hover:scale-105 transition-transform duration-300">
               Sachin Gupta -{" "}
-              <span className="text-primary hover:text-blue-600 transition-colors duration-300">IoT Developer</span>
+              <span className="text-primary hover:text-blue-600 transition-colors duration-300">WEB Developer</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto hover:text-foreground transition-colors duration-300">
-              Experienced IoT Developer specializing in smart systems, embedded programming, and cloud integration.
-              Passionate about creating innovative solutions that connect the physical and digital worlds seamlessly.
+            Enthusiastic Web Developer with a knack for turning ideas into interactive websites.
+             Experienced with frontend frameworks, React, and REST APIs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -256,7 +276,7 @@ technologies: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Node.js", 
                 asChild
                 className="hover:scale-110 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
               >
-                <Link href="/Sachin_IOT.pdf" download>
+                <Link href="/SACHIN_RESUME.pdf" download>
                   Download Resume
                 </Link>
               </Button>
@@ -274,8 +294,7 @@ technologies: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Node.js", 
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto hover:text-foreground transition-colors duration-300">
 
-I'm Sachin Gupta, an IoT Developer passionate about designing end-to-end smart solutions—combining embedded systems, 
-real-time sensing, and cloud integration to transform ideas into intelligent, connected products.
+I'm Sachin Gupta, a Web Developer passionate about building modern, responsive, and user-centric web applications. With a strong foundation in frontend and backend technologies, I love turning ideas into fast, functional, and visually appealing digital experiences.
             </p>
           </div>
 
@@ -284,13 +303,12 @@ real-time sensing, and cloud integration to transform ideas into intelligent, co
               <CardHeader>
                 <Smartphone className="w-12 h-12 text-primary mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300" />
                 <CardTitle className="group-hover:text-primary transition-colors duration-300">
-                  Mobile Integration
+                        Responsive Design
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground group-hover:text-foreground transition-colors duration-300">
-                 Integrated mobile connectivity to enable real-time monitoring, alerts, and data visualization through a user-friendly smartphone interface.
-                </p>
+       Crafting seamless user experiences across all devices using modern responsive design principles and mobile-first development.                </p>
               </CardContent>
             </Card>
 
@@ -298,13 +316,12 @@ real-time sensing, and cloud integration to transform ideas into intelligent, co
               <CardHeader>
                 <Wifi className="w-12 h-12 text-primary mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300" />
                 <CardTitle className="group-hover:text-primary transition-colors duration-300">
-                  Connectivity Solutions
+     Full Stack Development
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground group-hover:text-foreground transition-colors duration-300">
-                  Implementing robust communication protocols and ensuring reliable connectivity across diverse IoT
-                  ecosystems.
+                    Building scalable and dynamic web apps using modern JavaScript frameworks like React, Next.js, Node.js, and REST APIs.
                 </p>
               </CardContent>
             </Card>
@@ -313,13 +330,12 @@ real-time sensing, and cloud integration to transform ideas into intelligent, co
               <CardHeader>
                 <Cpu className="w-12 h-12 text-primary mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300" />
                 <CardTitle className="group-hover:text-primary transition-colors duration-300">
-                  Embedded Systems
+                  Backend & Databases
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground group-hover:text-foreground transition-colors duration-300">
-                  Designing and programming microcontrollers and embedded systems for efficient and scalable IoT
-                  solutions.
+                Creating robust backend systems and managing data efficiently using tools like Express.js, MongoDB, and SQL databases.
                 </p>
               </CardContent>
             </Card>
@@ -335,7 +351,7 @@ real-time sensing, and cloud integration to transform ideas into intelligent, co
               Featured Projects
             </h2>
             <p className="text-xl text-muted-foreground hover:text-foreground transition-colors duration-300">
-              Explore my latest IoT projects and innovations
+              Explore my latest WEB-D projects and innovations
             </p>
           </div>
 
@@ -537,7 +553,7 @@ real-time sensing, and cloud integration to transform ideas into intelligent, co
               Get In Touch
             </h2>
             <p className="text-xl text-muted-foreground hover:text-foreground transition-colors duration-300">
-              {"Let's discuss your next IoT project or collaboration opportunity"}
+              {"Let's discuss your next WEB project or collaboration opportunity"}
             </p>
           </div>
 
@@ -609,7 +625,7 @@ real-time sensing, and cloud integration to transform ideas into intelligent, co
       <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t bg-muted/50">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-muted-foreground hover:text-foreground transition-colors duration-300">
-            © 2024 Sachin Gupta - IoT Developer Portfolio. Built with Next.js and Tailwind CSS.
+            © 2024 Sachin Gupta - WEB Developer Portfolio. Built with Next.js and Tailwind CSS.
           </p>
         </div>
       </footer>

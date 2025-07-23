@@ -4,7 +4,7 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 
 export const metadata: Metadata = {
-  title: "Sachin Gupta - IoT Developer Portfolio",
+  title: "Sachin Gupta - WEB Developer Portfolio",
   description:
     "Experienced IoT Developer specializing in smart systems, embedded programming, and cloud integration. Explore my projects and expertise in connecting the physical and digital worlds.",
   generator: "v0.dev",

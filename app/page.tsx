@@ -41,7 +41,7 @@ description: "A modern and responsive website for GoG Cafe featuring an interact
     {
       title: "MY portfolio",
       description:
-        "An IoT portfolio showcasing smart, real-time solutions using ESP8266, GPS, Firebase, Flutter, and web technologies for impactful hardware-to-cloud integration.",
+       "Showcasing real-world solutions with a blend of frontend design, backend logic, and hardware integration — all in one portfolio.",
       image: "/webport.png?height=200&width=300",
 technologies: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Node.js", "Express.js", ],
 
